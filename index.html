@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pigeon Hustle</title>
+  <style>
+    html, body {
+      margin: 0;
+      height: 100%;
+      background: #1d2433;
+      color: #e8ecf3;
+      font-family: system-ui, sans-serif;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    #game {
+      width: 100%;
+      max-width: 960px;
+      aspect-ratio: 960 / 600;
+    }
+    p {
+      margin: 12px 16px;
+      font-size: 14px;
+      opacity: 0.8;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div id="game"></div>
+  <p>← → to walk · ↑ or Space to flap (3 flaps, then you have to land) · hold to glide · R to restart</p>
+
+  <!-- Phaser is the game framework: it handles drawing, gravity, and collisions. -->
+  <script src="lib/phaser.min.js"></script>
+  <!-- game.js is our game. -->
+  <script src="game.js"></script>
+</body>
+</html>
